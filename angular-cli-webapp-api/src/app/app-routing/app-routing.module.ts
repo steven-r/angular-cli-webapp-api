@@ -13,7 +13,7 @@ const routes: Routes = [
   path: 'demo',
   component: DemoPageComponent,
 },
-// All your other routes should come first
+// from https://stackoverflow.com/a/40865173/2298807
 { path: '404', component: NotFoundComponent },
 { path: '**', component: NotFoundComponent }
 // { path: '**', redirectTo: '/404' }

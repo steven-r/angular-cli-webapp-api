@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PreBuildEvent>ng build</PreBuildEvent>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,4 +17,47 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="src\app\app.component.css">
+      <DependentUpon>app.component.html</DependentUpon>
+    </None>
+    <None Update="src\app\app.component.ts">
+      <DependentUpon>app.component.html</DependentUpon>
+    </None>
+    <None Update="src\app\dashboard\dashboard.component.css">
+      <DependentUpon>dashboard.component.html</DependentUpon>
+    </None>
+    <None Update="src\app\dashboard\dashboard.component.ts">
+      <DependentUpon>dashboard.component.html</DependentUpon>
+    </None>
+    <None Update="src\app\demo\demo.component.css">
+      <DependentUpon>demo.component.html</DependentUpon>
+    </None>
+    <None Update="src\app\demo\demo.component.ts">
+      <DependentUpon>demo.component.html</DependentUpon>
+    </None>
+    <None Update="src\app\demo-page\demo-page.component.css">
+      <DependentUpon>demo-page.component.html</DependentUpon>
+    </None>
+    <None Update="src\app\demo-page\demo-page.component.ts">
+      <DependentUpon>demo-page.component.html</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="wwwroot\inline.bundle.js.map">
+      <DependentUpon>inline.bundle.js</DependentUpon>
+    </Content>
+    <Content Update="wwwroot\main.bundle.js.map">
+      <DependentUpon>main.bundle.js</DependentUpon>
+    </Content>
+    <Content Update="wwwroot\polyfills.bundle.js.map">
+      <DependentUpon>polyfills.bundle.js</DependentUpon>
+    </Content>
+    <Content Update="wwwroot\styles.bundle.js.map">
+      <DependentUpon>styles.bundle.js</DependentUpon>
+    </Content>
+    <Content Update="wwwroot\vendor.bundle.js.map">
+      <DependentUpon>vendor.bundle.js</DependentUpon>
+    </Content>
+  </ItemGroup>
 </Project>
