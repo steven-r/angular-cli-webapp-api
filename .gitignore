@@ -42,3 +42,4 @@ Thumbs.db
 node_modules/
 wwwroot/
 /.vs/angular-cli-webapp-api/v15/Server/sqlite3
+/.vs/config/applicationhost.config
